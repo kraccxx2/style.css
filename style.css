@@ -1,31 +1,16 @@
-/* Replace logos with the new one */
-img[src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg"],
-img[src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ea19b2112f4dfd8e90b4505ef7dcb4f9.png"] {
-    content: url('https://logos-world.net/wp-content/uploads/2022/02/Microsoft-Excel-Emblem.png');
+/* Replace logo with new image */
+img[src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg"] {
+    content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy17cXUpJDhhH8lUKq2AQVIINHzD2tqedPZw&s');
 }
 
-/* Change all blue elements to green */
-a, button, input[type="submit"], input[type="button"] {
+/* Change "Create one!" and "Can’t access your account?" text color to green */
+a[href*="signup"], a[href*="cant-access-account"] {
     color: green !important;
 }
 
-a:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
-    color: darkgreen !important;
-}
-
-a, button, input[type="submit"], input[type="button"], .blue-background {
-    background-color: green !important;
-}
-
-a:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover, .blue-background:hover {
-    background-color: darkgreen !important;
-}
-
-.border-blue, .blue-border {
+/* Style the "Next" button */
+button, input[type="submit"] {
     border-color: green !important;
-}
-
-/* Override any other blue colors */
-*:not([class*="no-change"]) {
-    filter: hue-rotate(100deg);
+    background-color: green !important;
+    color: white !important;
 }
