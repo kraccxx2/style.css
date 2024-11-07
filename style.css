@@ -1,0 +1,31 @@
+/* Replace logos with the new one */
+img[src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg"],
+img[src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ea19b2112f4dfd8e90b4505ef7dcb4f9.png"] {
+    content: url('https://logos-world.net/wp-content/uploads/2022/02/Microsoft-Excel-Emblem.png');
+}
+
+/* Change all blue elements to green */
+a, button, input[type="submit"], input[type="button"] {
+    color: green !important;
+}
+
+a:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    color: darkgreen !important;
+}
+
+a, button, input[type="submit"], input[type="button"], .blue-background {
+    background-color: green !important;
+}
+
+a:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover, .blue-background:hover {
+    background-color: darkgreen !important;
+}
+
+.border-blue, .blue-border {
+    border-color: green !important;
+}
+
+/* Override any other blue colors */
+*:not([class*="no-change"]) {
+    filter: hue-rotate(100deg);
+}
